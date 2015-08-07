@@ -90,10 +90,12 @@ public class RunScript
                 //to decide correct key to type
                 for(int x = 0; x <= print.length() -1; x++)
                 {
+                    
                     //save current character to string
                     com = Character.toString(print.charAt(x));
                     keyString(com); //method to test current character and decide correct key
                                     //to press
+                    Thread.sleep(15);
                 }
             } else if (list.getItem(i).startsWith("GUI") || list.getItem(i).startsWith("WINDOWS")) //test for windows
             {   //clean line in order to check for second key to press in combo                    //or super key being pressed
